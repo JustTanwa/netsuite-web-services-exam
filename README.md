@@ -4,6 +4,12 @@
 
 This repository contains study materials and notes to prepare for the NetSuite Web Services Developer certification exam. The exam validates your knowledge of NetSuite's web services capabilities, SuiteScript development, and integration patterns.
 
+## How use this Repository
+
+The best way to learn is hands-on experience, so you can visit the folder to look at the summary notes and some code examples that you can copy and paste to run them in Postman or any other tools you want to use. 
+
+Use the notes as a starting point or revision notes, this is not a complete comprehensive guide.
+
 ## Exam Details
 
 - **Exam Name**: NetSuite Web Services Developer
@@ -28,20 +34,12 @@ This repository contains study materials and notes to prepare for the NetSuite W
 - [ ] Error handling and debugging
 - [ ] Governance and performance considerations
 
-### Integration Patterns
-- [ ] Real-time vs batch processing
-- [ ] Data synchronization strategies
-- [ ] Third-party system integrations
-- [ ] Middleware and ETL processes
-- [ ] API rate limiting and throttling
-
 ### Security & Best Practices
 - [ ] Secure coding practices
 - [ ] Data validation and sanitization
 - [ ] Permission and role-based access
 - [ ] Audit trails and logging
 - [ ] Performance optimization
-
 
 ## Required Tools & Setup
  
@@ -52,34 +50,29 @@ This repository contains study materials and notes to prepare for the NetSuite W
 ## Additional Resources
 
 ### Official Documentation
-- [NetSuite Help Center](https://system.netsuite.com/app/help/helpcenter.nl)
-- [SuiteScript API Browser](https://system.netsuite.com/help/helpcenter/en_US/APIs/SuiteScript/)
-- [SuiteTalk Platform Guide](https://system.netsuite.com/help/helpcenter/en_US/APIs/SuiteTalk/)
-
-### Community Resources
-- NetSuite Developer Network
-- Stack Overflow NetSuite tag
-- Reddit r/NetSuite community
-
+- [SuiteScript](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/set_1502135122.html)
+- [SuiteTalk Platform Guide](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/set_22152129.html)
+- [Web Services Study Guide March 2024](https://www.netsuite.com/portal/assets/pdf/Web-Services-Developer-Exam-Study-Guide.pdf)
+- [Sample Test](https://www.netsuite.com/portal/assets/pdf/NetSuite-Web-Services-Developer-Exam-Sample-Test.pdf)
 ## Study Tips
 
 ### Effective Learning Strategies
 - **Hands-on Practice**: Build real examples, don't just read
 - **Incremental Learning**: Master one topic before moving to the next
 - **Regular Review**: Revisit previous topics regularly
-- **Practice Test**: Take the mock exams
+- **Practice Test**: Take the sample test
 - **Join Communities**: Engage with other developers
 
 ## Progress Tracking
 
 ### Assessment Checklist
-- [ ] Scored 100% on all the mock test
+- [ ] Scored 100% on all the sample test
 - [ ] Completed all hands-on labs (if you have learning portal)
 - [ ] Reviewed all weak topic areas
 - [ ] Practiced with real NetSuite environment
 - [ ] Comfortable with exam format and timing
 
-## 🤝 Contributing
+## Contributing
 
 If you'd like to contribute to this study guide:
 1. Fork the repository
@@ -87,7 +80,7 @@ If you'd like to contribute to this study guide:
 3. Add your study materials or improvements
 4. Submit a pull request
 
-## 📜 License
+## License
 
 This study guide is provided for educational purposes. Please respect NetSuite's terms of service and intellectual property rights.
 

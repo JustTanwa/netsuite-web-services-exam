@@ -1,7 +1,5 @@
 # NetSuite Integration Concurrency Study Guide
 
-A comprehensive study guide for mastering concurrency management across NetSuite's integration platforms for the NetSuite Web Services Developer certification exam.
-
 ## Overview
 
 This guide focuses on the critical aspects of managing multiple threads and concurrent operations across NetSuite's various integration services. Understanding concurrency is essential for building scalable, high-performance integrations that can handle enterprise-level data volumes.

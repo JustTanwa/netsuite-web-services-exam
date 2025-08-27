@@ -1,7 +1,5 @@
 # SuiteTalk SOAP Web Services Study Guide
 
-A comprehensive study guide for mastering NetSuite's SuiteTalk SOAP Web Services for the NetSuite Web Services Developer certification exam.
-
 ## Overview
 
 This guide covers all essential objectives for understanding and implementing NetSuite SuiteTalk SOAP Web Services. Each objective includes specific study topics and recommended course materials to ensure comprehensive preparation.
