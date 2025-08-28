@@ -63,3 +63,5 @@ The Search Page Size preference controls the number of returned search results. 
 You can override this preference for individual searches. For individual searches, asynchronous searches have a higher maximum than the company-wide limit
 
 [Company Preference](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3422217.html)
+
+**Tip:** Recommend to review some XML and produce some error messages, understand how different type of searches work and their impact on performance.

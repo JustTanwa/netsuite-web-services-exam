@@ -13,7 +13,7 @@ The three broad categories of records are:
 
 ## Fields and Custom Fields
 
-Within a record there will be standard fields and custom fields. In SOAP, a field is typically referred to by the tag name and it's important to determine the correct field type.
+Within a record there will be standard fields and custom fields. In SOAP, a field is typically referred to by the tag name and it's important to determine the correct field type. You may need to look into how to populate different field types, for example how should a date field be populated, what about an ENUM field like transaction type?
 
 ### Field Types:
 - String
@@ -35,7 +35,7 @@ Custom Fields are created to customise an account through SuiteBuilder. Custom f
 
 ## Sublist
 
-Sublist are the table or list you see on standard (or custom) records, for example item sublist on Sales Order.
+Sublist are the table or list you see on standard (or custom) records, for example item sublist on Sales Order. You will need to understand how to interact with these when creating and updating records that supports sublists.
 
 Record element (XML element) that ends with  **List** is a hint that it is a sublist, with the exception for `customFieldList` which is a list of custom fields.
 

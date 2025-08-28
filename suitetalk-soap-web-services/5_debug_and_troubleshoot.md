@@ -46,3 +46,4 @@ The above page is for debugging synchronous SOAP requests only.
 
 For Asynchronous SOAP Request users can view Setup > Integration > SOAP Web Services Process Status, if they have at least VIEW SOAP Web Services Logs permission or FULL SOAP Web Services permission. Similar limitation for saved request and response as above. On this page you can track job which are in progress and view details of those that have completed successfully. 
 
+**Tip:** There is a search type called Soap Web Services Logs that you can explore to see what is possible to be reported there and how you can utilise it to debug certain requests.

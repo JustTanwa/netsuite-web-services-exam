@@ -35,3 +35,5 @@ To get access to newer services, operations or message.
 ## What is the impact of new Netsuite features?
 
 - Netsuite tries to maintain backward compatibility but some custom workflows might be affected by the Netsuite account upgrade (new features are introduced)
+
+**Tip:** Understand what sort of errors you get when you use retired endpoints, think about what happens when you get new features and certain fields or standard records are changed, what should you do?

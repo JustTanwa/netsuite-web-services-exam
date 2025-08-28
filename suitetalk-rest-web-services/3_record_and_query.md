@@ -4,6 +4,11 @@ Not too much note on this one, best thing I can recommend here is to just set up
 
 I will include some JSON examples but really this one is just about practice.
 
+Understand how the REST endpoint are formed, it is quite intuitive if you have experience with REST API. The first part forms a domain and follow by the service, version and finally the resource. Review how you would structure these endpoint when dealing with Custom Records and how you can interact with the standard records that supports transformation and actions. Think turning Sales Order automatically to Invoices or approving time bill actions. 
+
+[Executing Record Actions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_156631158782.html)
+
+
 ## REST API Browser
 
 This is where you go to see the schema of records that are supported by REST Web Services, this is Netsuite's representation of the OpenAPI 3.0, which you can use swagger if you request the metadata catalogue.
@@ -12,14 +17,19 @@ This is where you go to see the schema of records that are supported by REST Web
 
 CRUD operations refer is an acronym for (Create, Read, Update, Delete) and you can do all those by interacting the with REST API through the different HTTP methods.
 
+[CRUD](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_158100110171.html#subsect_158100129524)
+
 GET - Get data
 POST - Create data
-PUT - Update data
+PUT - Update or Create data (Refers to as Upsert and must be used with external id)
+PATCH - Update data
 DELETE - Delete data
+
+The authentication token is passed to the header of the request and the body contains the information to be POST and it is in the format of JSON (JavaScript Object Notation). You can use the REST API Browser or the Metadata Catalogue to find out field types, and pass the correct formatted values for those fields. Play around and get a feel for what different field types mean.
 
 ## HATEOAS Link
 
-Hypermedia as the engine of application state (HATEOAS) means that REST API will give you response that will contain all the information you need in order to access all the needed resource. You will see that when you request an employee there's a hyperlink that you can follow if you want to know more about subsidiary that the employee belong to. In theory, you do not need to know what endpoint to get subsidiary data, you just need to follow the link.
+Hypermedia as the engine of application state (HATEOAS) means that REST API will give you response that will contain all the information you need in order to access all the needed resource. You will see that when you request an employee there's a hyperlink that you can follow if you want to know more about subsidiary that the employee belong to. In theory, you do not need to know what endpoint to get subsidiary data, you just need to follow the link. Try to understand the benefit of this design over SOAP for example.
 
 ## Try these
 - Try sending GET, POST, PUT, DELETE on a bunch of different records (standard and custom)

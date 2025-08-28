@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide covers all essential objectives for understanding and implementing NetSuite SuiteTalk SOAP Web Services. Each objective includes specific study topics and recommended course materials to ensure comprehensive preparation.
+This guide covers all essential objectives for understanding and implementing NetSuite SuiteTalk SOAP Web Services. Each objective includes specific study topics and recommended course materials taken straight from the official guide.
 
 ## Learning Objectives
 
