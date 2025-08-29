@@ -1,0 +1,38 @@
+<soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:platformCore="urn:core_2024_2.platform.webservices.netsuite.com"
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:platformMsgs="urn:messages_2024_2.platform.webservices.netsuite.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tranSales="urn:sales_2024_2.transactions.webservices.netsuite.com">
+    <soapenv:Header>
+        <tokenPassport xsi:type="platformCore:TokenPassport">
+            <account xsi:type="xsd:string">TD3013451</account>
+            <consumerKey xsi:type="xsd:string">
+                ****************************************************************</consumerKey>
+            <token xsi:type="xsd:string">
+                ****************************************************************</token>
+            <nonce xsi:type="xsd:string">MTc1NjQwNDA0Mg</nonce>
+            <timestamp xsi:type="xsd:long">1756404042</timestamp>
+            <signature xsi:type="platformCore:TokenPassportSignature" algorithm="HMAC_SHA256">
+                ********************************************</signature>
+        </tokenPassport>
+    </soapenv:Header>
+    <soapenv:Body>
+        <upsert xsi:type="platformMsgs:UpsertRequest">
+            <record externalId="test1234" xsi:type="tranSales:Invoice">
+                <department type="department" internalId="3" xsi:type="platformCore:RecordRef" />
+                <itemList xsi:type="tranSales:InvoiceItemList">
+                    <item xsi:type="tranSales:InvoiceItem">
+                        <line xsi:type="xsd:long">1</line>
+                        <quantity xsi:type="xsd:double">2</quantity>
+                    </item>
+                    <item xsi:type="tranSales:InvoiceItem">
+                        <item internalId="261" xsi:type="platformCore:RecordRef" />
+                        <amount xsi:type="xsd:double">100</amount>
+                        <quantity xsi:type="xsd:double">1</quantity>
+                    </item>
+                </itemList>
+            </record>
+        </upsert>
+    </soapenv:Body>
+</soapenv:Envelope>

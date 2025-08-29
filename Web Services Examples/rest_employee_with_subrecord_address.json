@@ -1,0 +1,20 @@
+{
+    "firstname": "John",
+    "lastname": "Smith",
+    "email": "jsmith@email.com",
+    "subsidiary": 3,
+    "addressBook": {
+        "items": [
+            {
+                "defaultBilling": true,
+                "label": "Default SE",
+                "addressBookAddress": {
+                    "addr1": "First Lineee",
+                    "city": "Stockholm",
+                    "country": "SE"
+                }
+            }
+        ]
+    }
+    
+}

@@ -1,0 +1,30 @@
+{
+    "firstname": "John",
+    "lastname": "Smith",
+    "email": "jsmith@email.com",
+    "subsidiary": 3,
+    "addressBook": {
+        "items": [
+            {
+                "addressId": 621,
+                "defaultBilling": true,
+                "label": "Default SE",
+                "addressBookAddress": {
+                    "addr1": "First Lineee",
+                    "city": "Stockholm",
+                    "country": "SE"
+                }
+            },
+            {
+                "defaultBilling": true,
+                "label": "Second Home",
+                "addressBookAddress": {
+                    "addr1": "Drottningatan",
+                    "city": "Stockholm",
+                    "country": "SE"
+                }
+            }
+        ]
+    }
+    
+}

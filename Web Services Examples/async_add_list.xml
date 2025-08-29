@@ -1,0 +1,33 @@
+<soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:platformCore="urn:core_2024_2.platform.webservices.netsuite.com"
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:platformMsgs="urn:messages_2024_2.platform.webservices.netsuite.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:listAcct="urn:accounting_2024_2.lists.webservices.netsuite.com">
+    <soapenv:Header>
+        <tokenPassport xmlns="urn:messages_2024_2.platform.webservices.netsuite.com">
+            <account xmlns="urn:core_2024_2.platform.webservices.netsuite.com">TD3013451</account>
+            <consumerKey xmlns="urn:core_2024_2.platform.webservices.netsuite.com">
+                ****************************************************************</consumerKey>
+            <token xmlns="urn:core_2024_2.platform.webservices.netsuite.com">
+                ****************************************************************</token>
+            <nonce xmlns="urn:core_2024_2.platform.webservices.netsuite.com">a33b74109c350f2bc906</nonce>
+            <timestamp xmlns="urn:core_2024_2.platform.webservices.netsuite.com">1756446259</timestamp>
+            <signature algorithm="HMAC-SHA256"
+                xmlns="urn:core_2024_2.platform.webservices.netsuite.com">
+                ********************************************</signature>
+        </tokenPassport>
+    </soapenv:Header>
+    <soapenv:Body>
+        <asyncAddList xsi:type="platformMsgs:AsyncAddListRequest">
+            <record xsi:type="listAcct:Account">
+                <acctNumber xsi:type="xsd:string">100020</acctNumber>
+                <acctName xsi:type="xsd:string">Test Account 2</acctName>
+                <currency internalId="1" xsi:type="platformCore:RecordRef" />
+                <subsidiaryList xsi:type="platformCore:RecordRefList">
+                    <recordRef internalId="1" xsi:type="platformCore:RecordRef" />
+                </subsidiaryList>
+            </record>
+        </asyncAddList>
+    </soapenv:Body>
+</soapenv:Envelope>

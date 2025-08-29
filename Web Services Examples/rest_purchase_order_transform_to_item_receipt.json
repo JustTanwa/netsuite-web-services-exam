@@ -1,0 +1,13 @@
+{
+    "memo": "Transformed from PO",
+    "item": {
+        "items": [
+            {
+                "orderLine": 2,
+                "item": 251,
+                "location": 6,
+                "quantity": 2
+            }
+        ]
+    }
+}

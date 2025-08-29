@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:platformCommon="urn:common_2024_2.platform.webservices.netsuite.com" xmlns:platformCore="urn:core_2024_2.platform.webservices.netsuite.com" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:platformMsgs="urn:messages_2024_2.platform.webservices.netsuite.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:listRel="urn:relationships_2024_2.lists.webservices.netsuite.com">
+    <soapenv:Header>
+        <tokenPassport xsi:type="platformCore:TokenPassport">
+            <account xsi:type="xsd:string">TD3013451</account>
+            <consumerKey xsi:type="xsd:string">****************************************************************</consumerKey>
+            <token xsi:type="xsd:string">****************************************************************</token>
+            <nonce xsi:type="xsd:string">MTc1NjQwMjMyNw</nonce>
+            <timestamp xsi:type="xsd:long">1756402327</timestamp>
+            <signature xsi:type="platformCore:TokenPassportSignature" algorithm="HMAC_SHA256">********************************************</signature>
+        </tokenPassport>
+        <searchPreferences xsi:type="platformMsgs:SearchPreferences">
+            <bodyFieldsOnly xsi:type="xsd:boolean">true</bodyFieldsOnly>
+            <pageSize xsi:type="xsd:int">5</pageSize>
+        </searchPreferences>
+    </soapenv:Header>
+    <soapenv:Body>
+        <search xsi:type="platformMsgs:SearchRequest">
+            <searchRecord xsi:type="listRel:ContactSearchAdvanced">
+                <criteria xsi:type="listRel:ContactSearch">
+                    <basic xsi:type="platformCommon:ContactSearchBasic">
+                        <email xsi:type="platformCore:SearchStringField" operator="notEmpty"/>
+                    </basic>
+                    <customerJoin xsi:type="platformCommon:CustomerSearchBasic">
+                        <companyName xsi:type="platformCore:SearchStringField" operator="startsWith">
+                            <searchValue xsi:type="xsd:string">M</searchValue>
+                        </companyName>
+                    </customerJoin>
+                </criteria>
+                <columns xsi:type="listRel:ContactSearchRow">
+                    <basic xsi:type="platformCommon:ContactSearchRowBasic">
+                        <email xsi:type="platformCore:SearchColumnStringField"/>
+                        <firstName xsi:type="platformCore:SearchColumnStringField"/>
+                        <lastName xsi:type="platformCore:SearchColumnStringField"/>
+                    </basic>
+                    <customerJoin xsi:type="platformCommon:CustomerSearchRowBasic">
+                        <email xsi:type="platformCore:SearchColumnStringField"/>
+                    </customerJoin>
+                </columns>
+            </searchRecord>
+        </search>
+    </soapenv:Body>
+</soapenv:Envelope>

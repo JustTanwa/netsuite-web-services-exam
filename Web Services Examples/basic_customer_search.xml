@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:platformCore="urn:core_2024_2.platform.webservices.netsuite.com"
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:platformMsgs="urn:messages_2024_2.platform.webservices.netsuite.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:listRel="urn:relationships_2024_2.lists.webservices.netsuite.com">
+    <soapenv:Header>
+        <tokenPassport xsi:type="platformCore:TokenPassport">
+            <account xsi:type="xsd:string">TD3013451</account>
+            <consumerKey xsi:type="xsd:string">
+                ****************************************************************</consumerKey>
+            <token xsi:type="xsd:string">
+                ****************************************************************</token>
+            <nonce xsi:type="xsd:string">MTc1NjQwMTMyOQ</nonce>
+            <timestamp xsi:type="xsd:long">1756401329</timestamp>
+            <signature xsi:type="platformCore:TokenPassportSignature" algorithm="HMAC_SHA256">
+                ********************************************</signature>
+        </tokenPassport>
+        <searchPreferences xsi:type="platformMsgs:SearchPreferences">
+            <bodyFieldsOnly xsi:type="xsd:boolean">false</bodyFieldsOnly>
+            <pageSize xsi:type="xsd:int">5</pageSize>
+        </searchPreferences>
+    </soapenv:Header>
+    <soapenv:Body>
+        <search xsi:type="platformMsgs:SearchRequest">
+            <searchRecord xsi:type="listRel:CustomerSearch" />
+        </search>
+    </soapenv:Body>
+</soapenv:Envelope>

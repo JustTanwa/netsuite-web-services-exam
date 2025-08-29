@@ -1,0 +1,20 @@
+{
+  "entity": 1327,
+  "employee": { "id": 1663 },
+  "expense": {
+    "items": [
+      {
+        "category": { "id": 1 },
+        "amount": 50
+      }
+    ]
+  },
+  "item": {
+    "items": [
+      {
+        "item": { "id": 251 },
+        "quantity": 2
+      }
+    ]
+  }
+}
